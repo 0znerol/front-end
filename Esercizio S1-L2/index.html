@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello pagina HTML per unpost. Scopri come iniziare in modo facile"
+    />
+    <title>Sviluppo di un pagina web</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.svg" alt="Logo" height="80px" />
+      <h2>Epicode - il blog dei developers</h2>
+      <nav>
+        <div id="menu">
+          <form method="POST" action="" id="form">
+            <label for="Menu">
+              <select name="Menu" id="Menu">
+                <option value="index.html" onclick="location=this.value">
+                  home
+                </option>
+                <option value="#" onclick="location=this.value">
+                  articoli
+                </option>
+                <option value="#" onclick="location=this.value">
+                  lavora con noi
+                </option>
+              </select>
+            </label>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>
+        Come creare un template per i post di MarioRossi - pubblicato il
+        25-10-2020
+      </h1>
+      <section id="first">
+        <p>
+          la prima cosa da fare è suddividere in blocchi logici la pagina,
+          identificando le parti comuni da applicare a tutte le pagine
+        </p>
+        <br />
+        <ul>
+          le varie aree saranno quindi suddivise in:
+          <li>contenuti di intestazione del tag &lt;header&gt;</li>
+          <li>
+            contenuti centrali variabili del tag &lt;main&gt;(corpo principale)
+          </li>
+          <li>
+            contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;
+          </li>
+        </ul>
+        <aside style="float: right">
+          <table border="1">
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <thead>
+              <th>anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto browser</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>80%</td>
+                <td>51%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+      </section>
+      <section id="format">
+        <p>
+          il testo dell'articolo dovra essere formato per identificare tutte le
+          parti da selezionare con i CSS. Percio i passi saranno:
+        </p>
+        <ol>
+          <li>
+            Progettare il markup assegnando ad ogni specifico testo il tag
+            appropriato
+          </li>
+          <li>
+            scrivere l'HTML dei tag esterni a quelli interni e dall'alto verso
+            il basso
+          </li>
+          <li>applicare gli stili CSS</li>
+        </ol>
+        <p>
+          l'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
+          la diffusione pressoche totale
+        </p>
+
+        <p>
+          un test di validazione potra esere fatto tramite
+          <a href="#">il tool online</a> dedicato allo scopo. Una volta
+          ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere
+          stati dei veri developers come loro:
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/oE5JTpoIYck?si=d35oed2ydEBYSncr"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <h3>
+        Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla nostra
+        newsletter:
+      </h3>
+
+      <form method="POST" action="codice.php">
+        <fieldset>
+          <input type="email" placeholder="Email" />
+          <button type="submit">iscriviti!</button>
+        </fieldset>
+      </form>
+      <aside
+        style="display: flex; flex-direction: column; margin-left: auto"
+        id="correlati"
+      >
+        area correlati<br />
+        <a href="#">
+          <button>
+            Vaildare il codice html<br />
+            categoria: develop<br />
+            data : 18-9-2020
+          </button> </a
+        ><br />
+        <a href="#">
+          <button>
+            Correggere la sintassi<br />
+            categoria: develop<br />
+            data : 16-9-2020
+          </button> </a
+        ><br />
+        <a href="#">
+          <button>
+            Meno kb nella pagina<br />
+            categoria: ottimizzazione<br />
+            data : 30-9-2020
+          </button>
+        </a>
+      </aside>
+      <section id="Copyright">
+        <p>
+          Blog epicode &copy;2023<br />
+          Testata online di Mario Rossi, regista con prot. n.213/2018-via Luigi
+          Einaudi 2 - Milano. P.IVA 00112233<br /><a
+            type="email"
+            href="mailto:info@epicode.school"
+            >info@epicode.school</a
+          >
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
