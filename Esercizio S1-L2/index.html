@@ -11,22 +11,22 @@
   </head>
   <body>
     <header>
-      <nav>
+      <div id="logo">
         <img src="img/logo.svg" alt="Logo" height="80px" />
         <h2>Epicode - il blog dei developers</h2>
-        <div id="menu">
-          <form method="POST" action="#" id="form">
-            <select name="Menu" id="Menu">
-              <option value="index.html" onclick="location=this.value">
-                home
-              </option>
-              <option value="#" onclick="location=this.value">articoli</option>
-              <option value="#" onclick="location=this.value">
-                lavora con noi
-              </option>
-            </select>
-          </form>
-        </div>
+      </div>
+      <nav>
+        <form method="POST" action="#" id="form">
+          <select name="Menu" id="Menu">
+            <option value="index.html" onclick="location=this.value">
+              home
+            </option>
+            <option value="#" onclick="location=this.value">articoli</option>
+            <option value="#" onclick="location=this.value">
+              lavora con noi
+            </option>
+          </select>
+        </form>
       </nav>
     </header>
     <main>
@@ -39,7 +39,6 @@
           la prima cosa da fare è suddividere in blocchi logici la pagina,
           identificando le parti comuni da applicare a tutte le pagine
         </p>
-        <br />
         <ul>
           le varie aree saranno quindi suddivise in:
           <li>contenuti di intestazione del tag &lt;header&gt;</li>
