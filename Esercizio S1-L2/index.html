@@ -15,20 +15,16 @@
         <img src="img/logo.svg" alt="Logo" height="80px" />
         <h2>Epicode - il blog dei developers</h2>
         <div id="menu">
-          <form method="POST" action="" id="form">
-            <label for="Menu">
-              <select name="Menu" id="Menu">
-                <option value="index.html" onclick="location=this.value">
-                  home
-                </option>
-                <option value="#" onclick="location=this.value">
-                  articoli
-                </option>
-                <option value="#" onclick="location=this.value">
-                  lavora con noi
-                </option>
-              </select>
-            </label>
+          <form method="POST" action="#" id="form">
+            <select name="Menu" id="Menu">
+              <option value="index.html" onclick="location=this.value">
+                home
+              </option>
+              <option value="#" onclick="location=this.value">articoli</option>
+              <option value="#" onclick="location=this.value">
+                lavora con noi
+              </option>
+            </select>
           </form>
         </div>
       </nav>
@@ -137,17 +133,7 @@
         Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla nostra
         newsletter:
       </h3>
-
-      <form method="POST" action="codice.php">
-        <fieldset>
-          <input type="email" placeholder="Email" />
-          <button type="submit">iscriviti!</button>
-        </fieldset>
-      </form>
-      <aside
-        style="display: flex; flex-direction: column; margin-left: auto"
-        id="correlati"
-      >
+      <aside style="float: right" id="correlati">
         area correlati<br />
         <a href="#">
           <button>
@@ -171,6 +157,17 @@
           </button>
         </a>
       </aside>
+      <form
+        method="POST"
+        action="codice.php"
+        style="display: flex; flex-shrink: 1"
+      >
+        <fieldset>
+          <input type="email" placeholder="Email" />
+          <button type="submit">iscriviti!</button>
+        </fieldset>
+      </form>
+
       <section id="Copyright">
         <p>
           Blog epicode &copy;2023<br />
