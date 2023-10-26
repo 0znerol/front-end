@@ -173,7 +173,7 @@ footer{
     color: white;
     width: 100%;
     margin: auto;
-    font-size: 0.7em;
+    font-size: 0.5em;
     border: 1px none transparent;
     text-align: center;
     box-sizing: content-box;
@@ -182,10 +182,11 @@ footer{
 
 }
 footer p{
-    padding-top:10px;
+    padding-top:20px;
 }
 address{
-    padding: 10px
+    
+    padding: 20px;
 }
 footer a{
     color: darkmagenta;
