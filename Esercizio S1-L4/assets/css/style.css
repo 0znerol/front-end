@@ -145,6 +145,9 @@ form button{
 aside{
     padding-bottom: 10px;
 }
+aside h2{
+    text-align: center;;
+}
 aside div{
     padding: 10px;
     background-color: rgb(194, 191, 191);
