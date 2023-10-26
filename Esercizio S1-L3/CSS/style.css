@@ -20,10 +20,9 @@ header p{
     border-left:none ;
     border-right:none ;
 }
-main{
-    
-    margin-left:20%  ;
-    margin-right:20% ;
+main{  
+    width: 50%;
+    margin: auto;
 }
 main > div{
 
@@ -35,8 +34,9 @@ h1{
 video{
     width: 40vw;
     border-radius: 10px;
+  
 }
-#img-name{
+figure{
     color: silver;
     text-align: center;
 }
@@ -61,15 +61,15 @@ video{
 footer{
     text-align: center;
 }
-article > section p{
+main > article section h2+p , ul + p{
     font-weight: bold;
 }
-article > section p:nth-of-type(1){
-    border-top: 2px solid steelblue;
+/*👉article > section p:nth-of-type(3){
+    border-top: 1px solid steelblue;
     line-height: 60px;
-}
-main > section h2{
-    border-bottom: 2px solid steelblue;
+}👈*/
+main > article section h2{
+    border-bottom: 1px solid steelblue;
     line-height: 60px;
 }
 a{

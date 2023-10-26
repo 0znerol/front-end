@@ -1,0 +1,192 @@
+/* IMPOSTAZIONI GENERALI */
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+body{
+    background-image: url(../img/sfondo.png);
+   margin: 0 5% 0 5%;
+}
+/* HEADER */
+
+header{
+    color: white;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(1,120,144,1) 100%);
+
+}
+img{
+    width: 300px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin: 0 0 10px 0;
+}
+nav ul li{
+    
+    margin: 0 auto;
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+/* MAIN */
+main{
+    margin-top:40px;
+    background-color: rgb(231, 231, 231);
+    width: fit-content;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+main > article {
+    margin: 0 20px;
+    font-size: 0.7rem;
+}
+main > article h1{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+main > article  p{
+    
+    margin: 0 0 25px 0;
+}
+main > article p:nth-child(2){
+    color: grey;
+}
+main > article section p:nth-child(2){
+    color: black;
+}
+main ul{
+    list-style-type: disc;
+    text-align: center;
+    margin: auto;
+}
+code{
+    line-height: 35px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 5px;
+    box-sizing: content-box;
+    margin: auto;
+}
+li{
+    margin: 10px 0 10px 15%;
+}
+ol{
+    list-style-type:decimal;
+    margin: 30px 0px;
+}
+.video{
+    width: 300px;
+    margin: auto;
+    
+}
+iframe{
+    border-radius: 10px;
+}
+main article section h2{
+    text-align: center;
+}
+main article section{
+    margin: 30px auto;
+    background-color: rgb(192, 192, 192);
+}
+strong{
+    font-weight: bold;
+    color: darkmagenta;
+}
+main a{
+    color: rgb(2, 48, 48);
+}
+/* TABELLE */
+table{
+    height: 300px;
+    margin:0 0 15px 0 ;
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 1px solid rgb(4, 106, 153);
+}
+tr:nth-child(even){
+    background-color: rgb(194, 191, 191);
+    border-top:1px solid grey ;
+    border-bottom:1px solid grey ;
+}
+
+thead, th{
+    background-color: rgb(4, 106, 153);
+    border-right: 1px solid grey;
+}
+
+/* FORM */
+form{
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+form input{
+    width: 7rem;
+    height: 30px;
+}
+form button{
+    font-size: 0.7em;
+    color: white;
+    border: none;
+    background-color: rgb(4, 106, 153);
+    height: 35px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside{
+    padding-bottom: 10px;
+}
+aside div{
+    padding: 10px;
+    background-color: rgb(194, 191, 191);
+    width: 350px;
+    height: 200px;
+    margin: 10px auto;
+    font-size: 0.7em;
+    box-sizing: content-box;
+}
+aside div p:last-child{
+    text-align: right;
+    padding: 130px 0 0 0;
+}
+/*👉aside > div{
+    font-size: 0.7em;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 350px;
+    margin: 20px auto;
+    background-color: rgb(194, 191, 191);
+    border: 1px solid grey;
+}👈*/
+
+/* FOOTER */
+footer{
+    color: white;
+    width: 100%;
+    margin: auto;
+    font-size: 0.7em;
+    border: 1px none transparent;
+    text-align: center;
+    box-sizing: content-box;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(0, 34, 36) 60%, rgb(15, 12, 0) 100%);
+
+}
+footer p{
+    padding-top:10px;
+}
+address{
+    padding: 10px
+}
+footer a{
+    color: darkmagenta;
+}
