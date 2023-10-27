@@ -38,8 +38,9 @@ nav a{
 }
 /* MAIN */
 main{
+    box-shadow: 1px 1px 5px;
     margin-top:40px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
     width: fit-content;
 }
 
@@ -86,9 +87,9 @@ ol{
 .video{
     width: 300px;
     margin: auto;
-    
 }
 iframe{
+    
     border-radius: 10px;
 }
 main article section h2{
@@ -120,6 +121,7 @@ tr:nth-child(even){
 }
 
 thead, th{
+    padding-top: 5px;
     background-color: rgb(4, 106, 153);
     border-right: 1px solid grey;
 }
