@@ -30,7 +30,8 @@ REGOLE
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-  let n1 = 12;
+  //let n1 = 12;
+  const N1 = 12;
   let n2 = 20;
   let somma = n1 + n2
   console.log("risultato somma : " + somma)
@@ -39,7 +40,7 @@ REGOLE
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-  let x = n1;
+  let x = N1;
   console.log("x = "+ x)
 
 /* ESERCIZIO 5
