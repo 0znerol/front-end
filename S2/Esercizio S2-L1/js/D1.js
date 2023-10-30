@@ -66,7 +66,7 @@ REGOLE
   nameLower = name2.toLowerCase();
   let controllo
 /* SCRIVI QUI LA TUA RISPOSTA */
-  //PROVA
+  //TEST CONCATENAZIONE TERNARIA 
   controllo = (name1 === name2 ) ? console.log(name1+" e "+name2+" sono uguali") : controllo = (name1 === nameLower) ? console.log(name1 +" e "+ nameLower +" sono uguali") : console.log(name1 +" e "+ nameLower +" Sono Diversi")
 
   //FUNZIONANTE
