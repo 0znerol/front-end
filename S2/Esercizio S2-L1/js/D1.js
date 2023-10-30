@@ -39,7 +39,7 @@ REGOLE
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-  let x = 12;
+  let x = n1;
   console.log("x = "+ x)
 
 /* ESERCIZIO 5
@@ -58,7 +58,7 @@ REGOLE
 /* SCRIVI QUI LA TUA RISPOSTA */
   somma = x - 4; 
   console.log("risultato sottrazione: " + somma);
-  
+
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
