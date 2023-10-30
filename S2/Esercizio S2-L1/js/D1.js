@@ -61,9 +61,15 @@ REGOLE
 */
   let name1 = "john";
   let name2 = "John";
-/* SCRIVI QUI LA TUA RISPOSTA */
-  let controllo = (name1 === name2 ) ? "sono uguali" : "sono diversi";
-  console.log(name1 +" e "+ name2 +" "+ controllo);
   nameLower = name2.toLowerCase();
-  controllo = (name1 === nameLower) ? "sono uguali" : "sono diversi";
-  console.log(name1 +" e "+ nameLower +" "+ controllo);
+  let controllo
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+  //PROVA
+  controllo = (name1 === name2 ) ? console.log(name1+" e "+name2+" sono uguali") : controllo = (name1 === nameLower) ? console.log(name1 +" e "+ nameLower +" sono uguali") : console.log(name1 +" e "+ nameLower +" Sono Diversi")
+
+  //FUNZIONANTE
+  // let controllo = (name1 === name2 ) ? "sono uguali" : "sono diversi";
+  // console.log(name1 +" e "+ name2 +" "+ controllo);
+  // controllo = (name1 === nameLower) ? "sono uguali" : "sono diversi";
+  // console.log(name1 +" e "+ nameLower +" "+ controllo);
