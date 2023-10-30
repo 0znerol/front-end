@@ -43,9 +43,11 @@ REGOLE
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
-  name = "Pezzica";
   const COGNOME = "cognome"
- // COGNOME = "Pezzica" ERRORE!
+  // COGNOME = "Pezzica" ERRORE!
+  name = "Pezzica"; 
+ 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
   console.log("il mio cognome è: " + name)
 /* ESERCIZIO 6
@@ -64,7 +66,6 @@ REGOLE
   nameLower = name2.toLowerCase();
   let controllo
 /* SCRIVI QUI LA TUA RISPOSTA */
-
   //PROVA
   controllo = (name1 === name2 ) ? console.log(name1+" e "+name2+" sono uguali") : controllo = (name1 === nameLower) ? console.log(name1 +" e "+ nameLower +" sono uguali") : console.log(name1 +" e "+ nameLower +" Sono Diversi")
 
