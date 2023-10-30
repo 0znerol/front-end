@@ -33,7 +33,7 @@ REGOLE
   //let n1 = 12;
   const N1 = 12;
   let n2 = 20;
-  let somma = n1 + n2
+  let somma = N1 + n2
   console.log("risultato somma : " + somma)
 
 /* ESERCIZIO 4
@@ -68,11 +68,10 @@ REGOLE
 /* SCRIVI QUI LA TUA RISPOSTA */
   let name1 = "john";
   let name2 = "John";
-  nameLower = name2.toLowerCase();
   let controllo
 
   //TEST CONCATENAZIONE TERNARIA 
-  controllo = (name1 === name2 ) ? console.log(name1+" e "+name2+" sono uguali") : controllo = (name1 === nameLower) ? console.log(name1 +" e "+ nameLower +" sono uguali") : console.log(name1 +" e "+ nameLower +" Sono Diversi")
+  controllo = (name1 === name2 ) ? console.log(name1+" e "+name2+" sono uguali") : controllo = (name1 === name2.toLowerCase()) ? console.log(name1 +" e "+ name2.toLowerCase() +" sono uguali") : console.log(name1 +" e "+ name2.toLowerCase() +" Sono Diversi")
 
   //FUNZIONANTE
   // controllo = (name1 === name2 ) ? "sono uguali" : "sono diversi";
