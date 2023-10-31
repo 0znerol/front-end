@@ -53,8 +53,8 @@ if (result == 0) {
 
 // /* SCRIVI QUI LA TUA RISPOSTA */
 let interi = [
-  prompt("inserisci un intero"),
-  prompt("inserisci un altro intero"),
+  parseInt(prompt("inserisci un intero")),
+  parseInt(prompt("inserisci un altro intero")),
 ];
 
 const SOMMA = interi[0] + interi[1];
@@ -119,7 +119,7 @@ if (totaleScontato > 50) {
 let a = parseInt(prompt("inserisci un numero da ordinare"));
 let b = parseInt(prompt("inserisci un numero da ordinare"));
 let c = parseInt(prompt("inserisci un numero da ordinare"));
-
+console.log(typeof a);
 if (a < b && b < c) {
   console.log(c + " " + b + " " + a);
 } else if (b < a && c < a) {
