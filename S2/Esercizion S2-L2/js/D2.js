@@ -57,8 +57,8 @@ let interi = [
   prompt("inserisci un altro intero"),
 ];
 
-let SOMMA = interi[0] + interi[1];
-let SOTTRAZIONE = interi[0] - interi[1];
+const SOMMA = interi[0] + interi[1];
+const SOTTRAZIONE = interi[0] - interi[1];
 
 console.log(interi[0] + " " + interi[1]);
 if (interi[0] == 8 || interi[1] == 8) {
