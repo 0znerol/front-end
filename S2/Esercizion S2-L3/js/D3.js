@@ -213,11 +213,13 @@ console.log(starWarsCharacters);
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
 console.log(characters.length);
+// console.log(femaleCharacters[fc].name);
+// console.log(characters[1]);
 for (i = 0; i < characters.length; i++) {
-  if (femaleCharacters[0].name === characters[i]) {
-    characters.splice(i, 1);
-  } else if (femaleCharacters[1].name === characters[i]) {
-    characters.splice(i, 1);
+  for (fc = 0; fc < femaleCharacters.length; fc++) {
+    if (femaleCharacters[fc].name === characters[i]) {
+      characters.splice(i, 1);
+    }
   }
 }
 console.log(characters.length);
