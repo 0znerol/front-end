@@ -119,7 +119,6 @@ if (totaleScontato > 50) {
 let a = parseInt(prompt("inserisci un numero da ordinare"));
 let b = parseInt(prompt("inserisci un numero da ordinare"));
 let c = parseInt(prompt("inserisci un numero da ordinare"));
-console.log(typeof a);
 if (a < b && b < c) {
   console.log(c + " " + b + " " + a);
 } else if (b < a && c < a) {
@@ -128,6 +127,8 @@ if (a < b && b < c) {
   } else {
     console.log(a + " " + b + " " + c);
   }
+} else {
+  console.log(c + " " + a + " " + b);
 }
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
