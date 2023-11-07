@@ -143,11 +143,40 @@ console.log(latestShoppingCart());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let loopUntil = (x) => {
+  let i = 0;
+  while (i < 3) {
+    let n = Math.floor(Math.random() * 9);
+    if (n > x) {
+      i++;
+      console.log(n + " è maggiore di " + x);
+    } else {
+      console.log(n + " non maggiore di " + x);
+    }
+  }
+};
+
+console.log(loopUntil(4));
+
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+let avgArr = [2, 3, 7, "sticaz", 44, 20];
+
+let average = () => {
+  let arrType = typeof avgArr[i];
+  console.log(typeof avgArr[i]);
+
+  for (let i = 0; i < avgArr.length; i++) {
+    if (arrType === "number") {
+    }
+  }
+};
+
+console.log(average());
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.

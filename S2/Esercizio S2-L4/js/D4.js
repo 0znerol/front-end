@@ -5,7 +5,7 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function area(base, altezza) {
-  calcolo = base * altezza;
+  let calcolo = base * altezza;
   return calcolo;
 }
 console.log(area(12, 11));
