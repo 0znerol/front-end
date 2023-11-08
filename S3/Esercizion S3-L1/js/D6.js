@@ -8,7 +8,7 @@ let conc = (string1, string2) => {
   let string1Char = string1.slice(0, 2);
   let string2Char = string2.slice(-3);
 
-  console.log(string1Char.toUpperCase() + string2Char.toUpperCase());
+  console.log(string1Char.toUpperCase().concat(string2Char.toUpperCase()));
 };
 
 conc("cosimo", "genoveffa");
@@ -19,7 +19,7 @@ console.log("------------------------------------");
 */
 let randArr = (...arr) => {
   for (let i = 0; i < 10; i++) {
-    arr.push(Math.floor(Math.random() * 100));
+    arr.push(Math.round(Math.random() * 100));
   }
   return arr;
 };
@@ -60,7 +60,7 @@ console.log("------------------------------------");
 
 let sumArrResult = 0;
 let sumArr = numericArr.reduce(
-  (num, currentValue) => num + currentValue,
+  (num, currentValue) => (num += currentValue),
   sumArrResult
 );
 console.log(sumArr);
@@ -271,10 +271,10 @@ console.log("------------------------------------");
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono 
   stati prodotti i film contenuti nell'array fornito.
 */
-let yearSumResult = 0;
+let initialValue = 0;
 let yearSum = movies.reduce(
   (num, currentValue) => num + parseInt(currentValue.Year),
-  yearSumResult
+  initialValue
 );
 console.log(yearSum);
 console.log("------------------------------------");
