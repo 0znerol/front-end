@@ -16,6 +16,11 @@ h1 {
   padding-left: 5px;
   display: inline;
 }
+@media only screen and (max-width: 260px) {
+  h1 {
+    color: transparent;
+  }
+}
 #inst {
   font-size: 9px;
   float: right;
@@ -29,6 +34,7 @@ button {
 input {
   background-color: rgb(46, 46, 46);
   color: white;
+  width: 20vw;
 }
 header {
   color: rgb(0, 0, 0);
