@@ -4,7 +4,7 @@ html {
 }
 body {
   height: 100%;
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(43, 43, 43);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,8 +19,16 @@ h1 {
 #inst {
   font-size: 9px;
   float: right;
-  padding-right: 2px;
-  color: gray;
+  padding-right: 5px;
+  color: white;
+}
+button {
+  border-radius: 20px;
+  border: none;
+}
+input {
+  background-color: rgb(46, 46, 46);
+  color: white;
 }
 header {
   color: rgb(0, 0, 0);
@@ -29,21 +37,20 @@ header {
   border-top: 2px solid;
   border-color: rgb(117, 117, 117);
   border-radius: 10px;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(121, 121, 121);
 }
 header div {
-  text-align: center;
-  margin: -28px 0 10px 0;
+  text-align: right;
+  margin: -28px 5px 10px 0;
 }
 main > div {
   display: flex;
   justify-content: space-around;
 }
 ol {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(118, 118, 118);
   padding-left: 5px;
   /* list-style: none; */
-  border: 2px solid grey;
   border-radius: 10px;
   width: 40%;
   height: fit-content;
@@ -54,4 +61,7 @@ ol {
 }
 .hide {
   display: none;
+}
+hr {
+  background-color: black;
 }
