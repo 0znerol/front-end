@@ -10,8 +10,8 @@ const changeTitle = function () {
 };
 changeTitle();
 /* ESERCIZIO 2
-             Scrivi una funzione per aggiungere al titolo della pagina una classe
-             "myHeading"
+Scrivi una funzione per aggiungere al titolo della pagina una classe
+"myHeading"
           */
 
 const addClassToTitle = function () {
@@ -32,6 +32,7 @@ const changePcontent = function () {
   console.dir(pInDiv);
 };
 changePcontent();
+
 /* ESERCIZIO 4
              Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
             */
@@ -54,7 +55,7 @@ const addToTheSecond = function () {
 };
 addToTheSecond();
 /* ESERCIZIO 6
-             Scrivi una funzione che aggiunga un paragrafo al primo div
+         Scrivi una funzione che aggiunga un paragrafo al primo div
           */
 
 const addParagraph = function () {
@@ -137,8 +138,8 @@ const generateTable = function () {
 };
 generateTable();
 /* ESERCIZIO 12
- Crea una funzione che aggiunga una riga alla tabella precedentemente creata e 
- fornisca i dati necessari come parametri
+ Crea una funzione che aggiunga una riga alla tabella 
+ precedentemente creata e fornisca i dati necessari come parametri
 */
 
 const addRow = function (prodName, amount, price) {
