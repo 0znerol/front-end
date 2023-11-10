@@ -60,6 +60,7 @@ ol {
   border-radius: 10px;
   width: 40%;
   height: fit-content;
+  overflow: hidden;
 }
 .listBorder {
   border-top: 2px solid grey;

@@ -1,0 +1,12 @@
+#tabNumeriEstratti {
+  display: flex;
+  flex-wrap: wrap;
+}
+h3 {
+  width: 20px;
+  padding: 10px;
+  border: 1px solid;
+}
+.active {
+  background-color: green;
+}
