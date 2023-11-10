@@ -46,4 +46,9 @@ button {
   border-radius: 2px;
   margin: 5px;
   box-shadow: 1px 1px 10px;
+  transition-duration: 400ms;
+}
+button:hover {
+  transition-duration: 400ms;
+  box-shadow: none;
 }
