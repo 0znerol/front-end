@@ -1,12 +1,25 @@
-#tabNumeriEstratti {
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tabNumeriEstratti,
+#playerTab {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
 }
+
 h3 {
   width: 20px;
   padding: 10px;
   border: 1px solid;
+  margin: 0;
 }
 .active {
   background-color: green;
+}
+.spacerDiv {
+  margin-left: 100%;
+  padding-top: 10px;
 }
