@@ -23,7 +23,7 @@ function generatePlayerTab() {
 
   for (i = 1; i < 25; i++) {
     let playerTabNum = Math.round(Math.random() * 77);
-    if (!playerTabArr.includes(playerTabNum)) {
+    if (!playerTabArr.includes(playerTabNum) && playerTabNum !== 0) {
       playerTabArr.push(playerTabNum);
       let elementoTabella = `
                                 
