@@ -2,10 +2,19 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-  background-color: #ba8889;
+  background: rgb(121, 161, 153);
+  background: linear-gradient(
+    180deg,
+    rgba(121, 161, 153, 1) 0%,
+    rgba(107, 121, 87, 1) 24%,
+    rgba(103, 62, 57, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 header {
   /* display: flex; */
+  font-size: 1.8vw;
   text-align: center;
   border: 2px solid;
   border-radius: 5px;
@@ -30,7 +39,7 @@ h3 {
   border: 1px solid;
   border-radius: 2px;
   margin: 0;
-  background-color: rgb(255, 109, 109);
+  background-color: #985443;
 }
 .active {
   transition-duration: 1000ms;

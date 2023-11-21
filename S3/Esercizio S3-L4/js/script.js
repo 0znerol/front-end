@@ -1,5 +1,5 @@
 let estractButton = document.getElementById("estractButton");
-let generateTabButton = document.getElementById("genPTab");
+let genTabButton = document.getElementById("genPTab");
 window.onload = function () {
   generateExtractionTab();
 };
@@ -14,11 +14,11 @@ function generateExtractionTab() {
   }
 }
 
-generateTabButton.addEventListener("click", (event) => {
-  generatePlayerTab();
+genTabButton.addEventListener("click", (event) => {
+  genPlayerTab();
 });
 
-function generatePlayerTab() {
+function genPlayerTab() {
   let playerTabArr = [];
 
   for (i = 1; i < 25; i++) {
@@ -49,7 +49,7 @@ let estractNumber = (button) => {
 estractNumber(estractButton);
 
 function generteNCheck() {
-  let rng = Math.round(Math.random() * 77);
+  let rng = Math.round(Math.random() * 76);
 
   if (!rngArr.includes(rng)) {
     rngArr.push(rng);
