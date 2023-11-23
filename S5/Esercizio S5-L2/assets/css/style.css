@@ -441,6 +441,16 @@ section {
   height: 267px;
 }
 
+.fa-sort-up {
+  border: 3px solid #f66151;
+  box-sizing: border-box;
+  height: 20px;
+  padding-top: 2px;
+}
+#backUpDiv {
+  padding-top: 5px;
+}
+
 @media screen and (min-width: 500px) and (max-width: 699px) {
   .fa-plus {
     border: 4px solid #3584e4;
@@ -449,6 +459,7 @@ section {
     border: 3px solid #f66151;
     box-sizing: border-box;
     height: 20px;
+    padding-top: -5px;
   }
   .fa-solid {
     font-size: 2em;
@@ -526,7 +537,7 @@ section {
   #backUpDiv {
     float: right;
     position: relative;
-    top: 204.7em;
+    top: 202em;
     right: -6em;
     padding-top: 0.35em;
   }
@@ -555,6 +566,7 @@ section {
     border: 3px solid #f66151;
     box-sizing: border-box;
     height: 34px;
+    padding-top: 5px;
   }
   .fa-solid {
     font-size: 3em;
@@ -607,7 +619,7 @@ section {
   #backUpDiv {
     float: right;
     position: relative;
-    top: 197em;
+    top: 194.4em;
     right: -6em;
     padding-top: 0.35em;
   }
