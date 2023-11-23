@@ -45,9 +45,14 @@ span {
   height: 3em;
   margin: 0 auto;
 }
-@media screen and (min-width: 419px) {
-}
 @media screen and (min-width: 600px) {
+  #productCard {
+    width: 15em;
+    align-self: baseline;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 800px) {
   #prodotti {
     flex-wrap: nowrap;
   }
