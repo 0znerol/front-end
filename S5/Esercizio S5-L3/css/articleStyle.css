@@ -1,0 +1,27 @@
+#news {
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  color: #60290f;
+  border-radius: 10px;
+  background-color: #faf7e3;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 10px;
+  /* align-self: center; */
+  box-shadow: -1px 0px 15px 4px rgba(0, 0, 0, 0.33);
+}
+#news p {
+  padding: 10px 0;
+}
+
+#news img {
+  display: flex;
+  width: 70%;
+  align-self: center;
+  /* margin: 0 auto; */
+}
+h3 {
+  font-size: 1.7em;
+  font-weight: bold;
+}

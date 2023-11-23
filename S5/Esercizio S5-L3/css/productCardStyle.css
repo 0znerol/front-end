@@ -1,0 +1,88 @@
+#prodotti {
+  display: flex;
+  flex-wrap: wrap;
+}
+#productCard {
+  color: #60290f;
+  font-size: 20px;
+  background: #faf7e3;
+  border-radius: 120px;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 22em;
+  margin: 10px auto;
+  box-shadow: -1px 0px 15px 4px rgba(0, 0, 0, 0.33);
+}
+#productCard img {
+  border-radius: 120px 120px 0 0;
+}
+#productCard div {
+  margin: 0 0 0 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#productCard p {
+  margin: 30px 0;
+  margin-top: 2em;
+}
+#productCard p:nth-child(1) {
+  font-weight: bold;
+}
+span {
+  font-weight: normal;
+}
+#productCard button {
+  color: #60290f;
+  font-size: 20px;
+  width: 10em;
+  border: none;
+  background-color: #f1df88;
+  border-radius: 40px;
+  height: 3em;
+  margin: 0 auto;
+}
+@media screen and (min-width: 419px) {
+}
+@media screen and (min-width: 600px) {
+  #prodotti {
+    flex-wrap: nowrap;
+  }
+  #productCard:nth-child(2),
+  #productCard:nth-child(3),
+  #productCard:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  #productCard:nth-child(2) {
+    display: flex;
+  }
+  #productCard:nth-child(3),
+  #productCard:nth-child(4) {
+    display: none;
+  }
+  #productCard {
+    width: 15em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #productCard:nth-child(3),
+  #productCard:nth-child(2) {
+    display: flex;
+  }
+
+  #productCard:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (min-width: 1550px) {
+  #productCard:nth-child(3),
+  #productCard:nth-child(2),
+  #productCard:nth-child(4) {
+    display: flex;
+  }
+}
