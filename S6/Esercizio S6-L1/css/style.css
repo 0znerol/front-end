@@ -1,0 +1,25 @@
+@media screen and (max-width: 575.98px) {
+  .sm {
+    display: block;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .md {
+    display: block;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .lg {
+    display: block;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .xl {
+    display: block;
+  }
+}
+@media screen and (max-width: 1399.98px) {
+  .xxl {
+    display: block;
+  }
+}
