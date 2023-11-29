@@ -1,0 +1,79 @@
+.navbar {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.navbar-nav {
+  flex-grow: 10;
+}
+.navbar-brand {
+  max-width: 130px;
+}
+.nav-item {
+  max-width: 200px;
+  flex-grow: 100;
+}
+hr {
+  background-color: black;
+  color: black;
+}
+span {
+  font-size: 25px;
+}
+.container p {
+  font-size: 25px;
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    text-align: center;
+  }
+  .sectionOneCard:last-child {
+    display: none;
+  }
+  img[class="w-50 rounded"] {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sectionOneCard:last-child {
+    display: flex;
+  }
+  img[class="w-50 rounded"] {
+    max-width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 15em;
+  }
+}
+.sectionTwoCard {
+  max-width: 14em;
+  flex-wrap: nowrap;
+}
+@media (min-width: 576px) {
+  .sectionTwoCard {
+    max-width: 15em;
+  }
+}
+@media (min-width: 1200px) {
+  .sectionTwoCard {
+    max-width: 30%;
+  }
+}
+.rounded {
+  font-size: 0.9em;
+  border-radius: 20px !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+img[class="w-50 rounded"] {
+  padding: 5px;
+  /* max-width: 200px; */
+}
