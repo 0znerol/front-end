@@ -1,0 +1,28 @@
+@import "_reset";
+@import "_font";
+@import "_colori";
+@import "_spaziature";
+@import "_mixins-gen";
+nav{
+    @include d-flex(space-between,center);
+    ul{
+        @include d-flex(none,none);
+    }
+}
+.showcase-content{
+    @include d-flex(none, none);
+    img{
+        width: 40em;
+    }
+}
+main{
+    @include d-flex(none, center);
+    div{
+        div{
+            img{
+                width: 20em;
+            }
+        }
+    }
+
+}
