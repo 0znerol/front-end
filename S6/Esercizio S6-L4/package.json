@@ -1,0 +1,14 @@
+{
+  "name": "esercizio-s6-l4",
+  "version": "1.0.0",
+  "description": "es s6-l4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.2"
+  }
+}
