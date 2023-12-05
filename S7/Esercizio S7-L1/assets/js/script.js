@@ -66,28 +66,35 @@ submitBtn.addEventListener("click", () => {
   petsArr.push(genPetProt);
   console.log(petsArr);
 
-  for (const key in petsArr) {
-    printUl.appendChild(document.createElement("li"));
-    document.querySelectorAll("li")[
-      key
-    ].innerHTML = `pet n${key}: <br> Pet name = ${petsArr[key].petName} <br> Owner Name= ${petsArr[key].ownerName} <br> specie= ${petsArr[key].species}<br> breed= ${petsArr[key].breeds} `;
-  }
-  Pets.prototype.ownerCheck = () => {
-    for (const key in petsArr) {
-      let own = petsArr[key].ownerName;
-      console.log(key);
-      console.log(petsArr.length);
-      console.log(own);
-      for (let n = 0; n < petsArr.length; n++) {
-        if (key != n && own === petsArr[n].ownerName) {
-          document.querySelector(
-            "#sameOwner"
-          ).innerHTML = `<p> pet n${key} e pet n${n} hanno il solito padrone </p>`;
-        }
-      }
-    }
-  };
+  addList(printUl);
+
   genPetProt.ownerCheck();
   names[0].value = "";
   names[1].value = "";
 });
+
+function addList(ul) {
+  for (const key in petsArr) {
+    ul.appendChild(document.createElement("li"));
+    let li = document.querySelectorAll("li");
+    li[
+      key
+    ].innerHTML = `pet n${key}: <br> Pet name = ${petsArr[key].petName} <br> Owner Name= ${petsArr[key].ownerName} <br> specie= ${petsArr[key].species}<br> breed= ${petsArr[key].breeds} `;
+    li[key].classList.add("list-group-item");
+  }
+}
+Pets.prototype.ownerCheck = () => {
+  for (const key in petsArr) {
+    let own = petsArr[key].ownerName;
+    console.log(key);
+    console.log(petsArr.length);
+    console.log(own);
+    for (let n = 0; n < petsArr.length; n++) {
+      if (key != n && own === petsArr[n].ownerName) {
+        document.querySelector(
+          "#sameOwner"
+        ).innerHTML = `<p> pet n${key} e pet n${n} hanno il solito padrone </p>`;
+      }
+    }
+  }
+};
