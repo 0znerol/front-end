@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.2/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="mb-3">
+        <label for="petName" class="form-label">Pet Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="petName"
+          aria-describedby="petname"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="ownerName" class="form-label">Owner Name</label>
+        <input type="text" class="form-control" id="ownerName" />
+      </div>
+      <div class="mb-3">
+        <label for="selectSpecies" class="form-label">Select Species</label>
+        <select id="selectSpecies" class="form-select">
+          <option>Cane</option>
+          <option>Gatto</option>
+          <option>Coniglio</option>
+          <option>Rettile</option>
+          <option>Pesce</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="selectSpecies" class="form-label">Select Breed</label>
+        <select id="selectSpecies" class="form-select">
+          <option>None</option>
+          <option>Labrador</option>
+          <option>Soriano</option>
+          <option>Nano</option>
+          <option>Setter</option>
+          <option>Alano</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="petsPrint">
+      pets
+
+      <ul></ul>
+    </div>
+    <div id="sameOwner"></div>
+
+    <script src="assets/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
