@@ -10,8 +10,8 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <div class="mb-3">
+    <form class="row">
+      <div class="mb-3 col">
         <label for="petName" class="form-label">Pet Name</label>
         <input
           type="text"
@@ -20,11 +20,11 @@
           aria-describedby="petname"
         />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 col">
         <label for="ownerName" class="form-label">Owner Name</label>
         <input type="text" class="form-control" id="ownerName" />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 col">
         <label for="selectSpecies" class="form-label">Select Species</label>
         <select id="selectSpecies" class="form-select">
           <option>Cane</option>
@@ -34,7 +34,7 @@
           <option>Pesce</option>
         </select>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 col">
         <label for="selectSpecies" class="form-label">Select Breed</label>
         <select id="selectSpecies" class="form-select">
           <option>None</option>
@@ -45,7 +45,9 @@
           <option>Alano</option>
         </select>
       </div>
-      <button type="button" class="btn btn-primary">Submit</button>
+      <div class="col m-auto">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
     </form>
     <div id="petsPrint">
       pets

@@ -82,7 +82,7 @@ submitBtn.addEventListener("click", () => {
         if (key != n && own === petsArr[n].ownerName) {
           document.querySelector(
             "#sameOwner"
-          ).innerHTML = `<p> pet n${key} and pet n${n} hanno il solito padrone </p>`;
+          ).innerHTML = `<p> pet n${key} e pet n${n} hanno il solito padrone </p>`;
         }
       }
     }
