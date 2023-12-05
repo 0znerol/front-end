@@ -88,4 +88,6 @@ submitBtn.addEventListener("click", () => {
     }
   };
   genPetProt.ownerCheck();
+  names[0].value = "";
+  names[1].value = "";
 });
