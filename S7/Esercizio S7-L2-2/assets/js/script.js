@@ -4,23 +4,19 @@ let delButton = document.querySelectorAll("button")[1];
 let label = document.querySelector("label");
 let todoUl = document.querySelector("ul");
 let li = document.querySelectorAll("li");
-console.dir(todoUl);
 let cc = localStorage.getItem("counter");
 let todoArr = [];
 let i = 0;
 addTodo();
 inputButton.addEventListener("click", () => {
   cc++;
-
   localStorage.setItem("counter", cc);
   let usrInput = input.value;
-
   todoArr.push[usrInput];
   localStorage.setItem(`${cc}`, usrInput);
   // console.dir(localStorage.getItem(`${cc}`));
   // console.log(cc);
   // console.log(todoArr);
-
   // console.log(localStorage.getItem("counter"));
   input.value = "";
   addTodo();
@@ -35,7 +31,6 @@ function addTodo() {
     console.log(todoArr);
     todoUl.innerHTML += `<li>${todoArr[i - 1]}</li>`;
     document.querySelector("li").style.display = "none";
-
     if (i === 0) {
       todoArr.shift();
     }
