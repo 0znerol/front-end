@@ -17,19 +17,15 @@ inputButton.addEventListener("click", () => {
 
   todoArr.push[usrInput];
   localStorage.setItem(`${cc}`, usrInput);
-  console.dir(localStorage.getItem(`${cc}`));
-  console.log(cc);
-  console.log(todoArr);
+  // console.dir(localStorage.getItem(`${cc}`));
+  // console.log(cc);
+  // console.log(todoArr);
 
-  console.log(localStorage.getItem("counter"));
-
+  // console.log(localStorage.getItem("counter"));
   input.value = "";
   addTodo();
 });
 delButton.addEventListener("click", () => {
-  console.log("stocaz");
-  localStorage.removeItem("0");
-
   localStorage.removeItem("counter");
   localStorage.removeItem("todoArr");
 });
