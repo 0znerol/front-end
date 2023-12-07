@@ -28,7 +28,7 @@ inputButton.addEventListener("click", () => {
 
     addTodo();
   } else {
-    alert("sticazi");
+    alert("NO");
   }
 });
 delButton.addEventListener("click", () => {
@@ -52,10 +52,10 @@ function addTodo() {
     }
   }
 }
+
 todoUl.addEventListener("click", (event) => {
   console.log(event.target.nodeName);
   console.dir(event.target);
-
   if (event.target.nodeName === "LI") {
     strikeCc++;
     localStorage.setItem("counter", cc);
