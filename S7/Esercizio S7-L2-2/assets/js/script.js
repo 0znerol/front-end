@@ -34,6 +34,8 @@ inputButton.addEventListener("click", () => {
 delButton.addEventListener("click", () => {
   localStorage.removeItem("counter");
   localStorage.removeItem("todoArr");
+  localStorage.clear();
+  location.reload();
 });
 function addTodo() {
   for (i = i; i <= cc; i++) {
@@ -58,7 +60,15 @@ todoUl.addEventListener("click", (event) => {
   console.dir(event.target);
   if (event.target.nodeName === "LI") {
     strikeCc++;
-    localStorage.setItem("counter", cc);
+    localStorage.setItem("strikeCc", strikeCc);
     event.target.style.textDecoration = "line-through";
+  } else if (event.target.nodeName === "BUTTON") {
+    console.log(event.target.parentNode);
+    // document.getElementsByClassName("div")[0].classList.remove("d-flex")
+    event.target.parentNode.classList.remove("d-flex");
+    event.target.parentNode.style.display = "none";
+  } else if (event.target.nodeName === "I") {
+    event.target.parentNode.parentNode.classList.remove("d-flex");
+    event.target.parentNode.parentNode.style.display = "none";
   }
 });

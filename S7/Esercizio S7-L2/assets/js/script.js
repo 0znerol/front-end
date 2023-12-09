@@ -11,8 +11,7 @@ if (label.innerText === `User : null`) {
 }
 inputButton.addEventListener("click", () => {
   let usrInput = input.value;
-  let x = usrInput;
-  localStorage.setItem("usrInput", x);
+  localStorage.setItem("usrInput", usrInput);
   console.log(usrInput);
   label.innerText = `User : ${localStorage.getItem("usrInput")}`;
   input.value = "";

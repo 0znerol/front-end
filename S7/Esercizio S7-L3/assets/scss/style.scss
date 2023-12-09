@@ -1,0 +1,15 @@
+@import "_import_bootstrap";
+.col-3{
+    margin-top: 10px;
+    .card-title{
+        overflow-x: hidden;
+    }
+}
+.dropdown-menu.show {
+    width: 22em;
+    left: -15em;
+    font-size: 0.9em;
+    span{
+        margin-left: 20px ;
+    }
+}
