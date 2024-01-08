@@ -5,6 +5,7 @@ const ButtonComponent = ({ text, onClick }) => {
     <button
       className="btn border border-success text-success m-1 shadow"
       onClick={onClick}
+      type="button"
     >
       {text}
     </button>

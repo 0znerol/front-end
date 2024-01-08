@@ -40,10 +40,11 @@ function App() {
   let userName = user[cc].name;
   let userSurname = user[cc].surname;
   return (
-    <div className="App row text-center">
+    <div className="App row text-center" data-bs-theme="dark">
       <div className="col">
         <ButtonComponent text="cycle users & image" onClick={handleClick} />
-        <div className="d-flex flex-column align-items-center">
+
+        <div className="d-flex flex-column align-items-center ">
           <ImageComponent src={imageUrl} />
           <p>
             {"User " + user[cc].id + "/10: " + userName + " " + userSurname}
