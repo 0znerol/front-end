@@ -5,7 +5,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 let cc = 0;
-let imgNum = Math.floor(Math.random() * 1000);
 async function fetchUsers() {
   const response = await fetch("http://192.168.1.116:7000/users", {
     method: "GET",
