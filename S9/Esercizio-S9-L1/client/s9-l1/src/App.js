@@ -13,7 +13,6 @@ async function fetchUsers() {
     headers: { "Access-Control-Allow-Origin": "*" },
   });
   const json = await response.json();
-  console.log(json);
   return json;
 }
 
@@ -38,7 +37,6 @@ function App() {
       cc++;
     }
   };
-  console.log(imageUrl);
   let userName = user[cc].name;
   let userSurname = user[cc].surname;
   return (
