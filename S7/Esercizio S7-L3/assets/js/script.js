@@ -10,7 +10,6 @@ xhr.onreadystatechange = function () {
     addCard(jsonArr);
   }
 };
-
 function addCard(jsonArr) {
   let cardDivs = document.querySelectorAll(".col-3");
   let cartUl = document.querySelector(".dropdown-menu");
@@ -33,7 +32,7 @@ function addCard(jsonArr) {
                                     <div class="row">
                                         <p class="card-text">${jsonArr[i].price}€</p>
                                     </div>
-                                    <div class="col text-center"><button class="btn btn-primary m-1">Compra</button><button class="btn btn-danger m-1">elimina</button></div>
+                                    <div class="col text-center"><button class="btn btn-primary m-1">Compra</button><button class="btn btn-danger m-1">Elimina</button></div>
                                 </div>`;
     let delBtn = document.querySelectorAll(".btn-danger")[i];
     delBtn.addEventListener("click", (event) => {
@@ -43,11 +42,13 @@ function addCard(jsonArr) {
     });
     let cartBtn = document.querySelectorAll(".btn-primary")[i];
     let h5 = document.querySelectorAll("h5")[i];
-    let titles = h5.innerText.slice(0, (h5.innerText.length / 80) * 100);
+    let percent = (h5.innerText.length / 100) * 45;
+    console.log(percent);
+    let titles = h5.innerText.slice(0, percent);
     console.log(titles);
     let price = document.querySelectorAll(".card-text")[i];
     cartBtn.addEventListener("click", (event) => {
-      cartUl.innerHTML += `<li class="row"><span class="col-7 border">${titles}...</span><span class="col-4 text-center border">${price.innerText}</span></li>`;
+      cartUl.innerHTML += `<li class="row"><span class="col-6 border">${titles}...</span><span class="col-4 text-center border">${price.innerText}</span></li>`;
     });
     i++;
   });
