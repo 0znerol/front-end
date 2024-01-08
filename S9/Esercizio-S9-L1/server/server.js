@@ -19,6 +19,42 @@ const users = [
     name: "Giuseppe",
     surname: "Bianchi",
   },
+
+  {
+    id: 4,
+    name: "Roberto",
+    surname: "Ferrari",
+  },
+  {
+    id: 5,
+    name: "Giovanni",
+    surname: "Russo",
+  },
+  {
+    id: 6,
+    name: "Francesco",
+    surname: "Esposito",
+  },
+  {
+    id: 7,
+    name: "Paolo",
+    surname: "Bianchi",
+  },
+  {
+    id: 8,
+    name: "Giacomo",
+    surname: "Romano",
+  },
+  {
+    id: 9,
+    name: "Gianluca",
+    surname: "Gallo",
+  },
+  {
+    id: 10,
+    name: "Marco",
+    surname: "Costa",
+  },
 ];
 
 app.use(
@@ -29,7 +65,7 @@ app.use(
   })
 );
 app.get("/users", (req, res) => {
-  res.send(JSON.stringify(users));
+  res.send(users);
 });
 
 //fileupload
