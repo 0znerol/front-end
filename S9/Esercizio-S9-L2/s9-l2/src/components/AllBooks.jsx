@@ -11,6 +11,7 @@ class AllBooks extends Component {
       historyBooks: [],
       horrorBooks: [],
       romanceBooks: [],
+      searchProps: this.props,
     };
   }
 
@@ -21,7 +22,7 @@ class AllBooks extends Component {
   fetchBooks = async () => {
     try {
       const response = await fetch("../books/scifi.json");
-      console.log(response);
+
       const data = await response.json();
       this.setState({ scifiBooks: data });
     } catch (error) {
@@ -29,7 +30,7 @@ class AllBooks extends Component {
     }
     try {
       const response = await fetch("../books/fantasy.json");
-      console.log(response);
+
       const data = await response.json();
       this.setState({ fantasyBooks: data });
     } catch (error) {
@@ -37,7 +38,7 @@ class AllBooks extends Component {
     }
     try {
       const response = await fetch("../books/history.json");
-      console.log(response);
+
       const data = await response.json();
       this.setState({ historyBooks: data });
     } catch (error) {
@@ -45,7 +46,7 @@ class AllBooks extends Component {
     }
     try {
       const response = await fetch("../books/horror.json");
-      console.log(response);
+
       const data = await response.json();
       this.setState({ horrorBooks: data });
     } catch (error) {
@@ -53,17 +54,19 @@ class AllBooks extends Component {
     }
     try {
       const response = await fetch("../books/romance.json");
-      console.log(response);
+
       const data = await response.json();
       this.setState({ romanceBooks: data });
     } catch (error) {
       console.error("Error fetching books:", error);
     }
   };
-
+  // componentDidUpdate() {
+  //   console.log(this.props);
+  // }
   render() {
     return (
-      <BookList books={[this.state]} />
+      <BookList books={[this.state]} sv={this.props} />
       //   <Row>
       //     <Col>
       //       <Row>

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Nav,
   Navbar,
@@ -9,7 +10,18 @@ import {
   Container,
 } from "react-bootstrap";
 
-function NavBar() {
+const NavBar = (props) => {
+  const [search, setSearch] = useState("");
+  const handleChangeSearch = (event) => {
+    props.searchInput(event.target.value);
+    setSearch(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSearch("");
+  };
+  console.log(search);
   return (
     <Navbar expand="lg" className="bg-secondary-subtle">
       <Container fluid className="m-0">
@@ -38,10 +50,14 @@ function NavBar() {
                   type="text"
                   placeholder="Search"
                   className=" mr-sm-2"
+                  value={search}
+                  onChange={handleChangeSearch}
                 />
               </Col>
               <Col xs="auto">
-                <Button type="submit">Submit</Button>
+                <Button type="submit" onClick={handleSubmit}>
+                  Submit
+                </Button>
               </Col>
             </Row>
           </Form>
@@ -49,6 +65,6 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;
