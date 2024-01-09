@@ -17,7 +17,7 @@ async function fetchUsers() {
 }
 
 function App() {
-  const [user, setUser] = useState([fetchUsers]);
+  const [user, setUser] = useState([fetchUsers()]);
   const [userCount, setUserCount] = useState(0);
   const [imageUrl, setImageUrl] = useState("");
   useEffect(() => {
@@ -39,6 +39,7 @@ function App() {
   };
   let userName = user[cc].name;
   let userSurname = user[cc].surname;
+  console.log(user);
   return (
     <div className="App row text-center" data-bs-theme="dark">
       <div className="col">
