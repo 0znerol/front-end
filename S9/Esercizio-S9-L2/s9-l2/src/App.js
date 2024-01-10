@@ -9,13 +9,14 @@ import React, { useState } from "react";
 function App() {
   const [search, setSearch] = useState();
 
-  let sInput = (aaa) => {
-    if (aaa == undefined) {
+  let sInput = (input, filter) => {
+    if (input == undefined) {
       return "";
     }
-    setSearch(aaa);
-    // console.log(aaa);
-    return aaa;
+    setSearch(input);
+    // console.log(input);
+    console.log(filter);
+    return input;
   };
   // useEffect(() => {
   //   const getInput = async () => {
@@ -25,6 +26,7 @@ function App() {
   //   getInput();
   //   console.log(getInput());
   // }, [sInput]);
+  console.log(search);
   return (
     <div className="App">
       <NavBar searchInput={sInput} />

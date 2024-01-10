@@ -17,7 +17,7 @@ export default class SingleBook extends Component {
         return null;
       } else {
         return (
-          <Col key={asin}>
+          <Col key={asin} className="d-flex justify-content-center">
             <Card
               className="text-center  p-0 col-1 border mt-2"
               style={{ width: "16em", height: "33em" }}

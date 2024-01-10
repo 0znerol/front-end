@@ -16,7 +16,9 @@ const NavBar = (props) => {
     props.searchInput(event.target.value);
     setSearch(event.target.value);
   };
-
+  // const handleFilter = (event) => {
+  //   props.searchInput(search, event.target.innerText);
+  // };
   const handleSubmit = (event) => {
     event.preventDefault();
     setSearch("");
@@ -31,16 +33,12 @@ const NavBar = (props) => {
           <Nav className="me-auto">
             <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
-            <NavDropdown title="Browse" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+            <NavDropdown title="Filter" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Fantasy</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Horror</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">History</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Scifi</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.5">Romance</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="ml-auto">

@@ -11,7 +11,6 @@ class AllBooks extends Component {
       historyBooks: [],
       horrorBooks: [],
       romanceBooks: [],
-      searchProps: this.props,
     };
   }
 
@@ -66,7 +65,7 @@ class AllBooks extends Component {
   // }
   render() {
     return (
-      <BookList books={[this.state]} sv={this.props} />
+      <BookList books={[this.state]} sv={this.props.searchValue} />
       //   <Row>
       //     <Col>
       //       <Row>
