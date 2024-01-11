@@ -28,7 +28,7 @@ function App() {
   // }, [sInput]);
   console.log(search);
   return (
-    <div className="App">
+    <div className="App bg-warning">
       <NavBar searchInput={sInput} />
       <HeroComponent />
       <AllBooks searchValue={search} />

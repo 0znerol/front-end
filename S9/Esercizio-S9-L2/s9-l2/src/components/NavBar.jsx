@@ -25,7 +25,10 @@ const NavBar = (props) => {
   };
   console.log(search);
   return (
-    <Navbar expand="lg" className="bg-secondary-subtle">
+    <Navbar
+      expand="lg"
+      className="bg-secondary-subtle border border-dark shadow"
+    >
       <Container fluid className="m-0">
         <Navbar.Brand href="#home">React-Bookstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
