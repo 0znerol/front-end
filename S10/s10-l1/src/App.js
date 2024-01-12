@@ -8,15 +8,20 @@ import React, { useState } from "react";
 
 function App() {
   const [search, setSearch] = useState();
+  const [filter, setFilter] = useState();
 
-  let sInput = (input, filter) => {
+  let sInput = (input) => {
     if (input == undefined) {
       return "";
     }
     setSearch(input);
     // console.log(input);
-    console.log(filter);
     return input;
+  };
+  let fValue = (filter) => {
+    console.log(filter);
+    setFilter(filter);
+    return filter;
   };
   // useEffect(() => {
   //   const getInput = async () => {
@@ -29,9 +34,9 @@ function App() {
   console.log(search);
   return (
     <div className="App bg-warning">
-      <NavBar searchInput={sInput} />
+      <NavBar searchInput={sInput} filter={fValue} />
       <HeroComponent />
-      <AllBooks searchValue={search} />
+      <AllBooks searchValue={search} filterBooks={filter} />
       <MyFooter />
     </div>
   );

@@ -7,11 +7,14 @@ const AllBooks = (props) => {
   const [historyBooks, setHistoryBooks] = useState([]);
   const [horrorBooks, setHorrorBooks] = useState([]);
   const [romanceBooks, setRomanceBooks] = useState([]);
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     fetchBooks();
   }, []);
-
+  useEffect(() => {
+    setFilter(props.filterBooks);
+  }, [props.filterBooks]);
   const fetchBooks = async () => {
     try {
       const response = await fetch("../books/scifi.json");
@@ -49,7 +52,7 @@ const AllBooks = (props) => {
       console.error("Error fetching romance books:", error);
     }
   };
-  console.log(props.searchValue);
+  console.log(filter);
   return (
     <BookList
       books={[
@@ -60,6 +63,7 @@ const AllBooks = (props) => {
         romanceBooks,
       ]}
       sv={props.searchValue}
+      fv={props.filterBooks}
     />
     //   <Row>
     //     <Col>

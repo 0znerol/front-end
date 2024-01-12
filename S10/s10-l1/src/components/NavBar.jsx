@@ -12,6 +12,7 @@ import {
 
 const NavBar = (props) => {
   const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState("");
   const handleChangeSearch = (event) => {
     props.searchInput(event.target.value);
     setSearch(event.target.value);
@@ -23,7 +24,19 @@ const NavBar = (props) => {
     event.preventDefault();
     setSearch("");
   };
+  const handleFilter = (event) => {
+    if (event.target.innerText === "Remove Filter") {
+      props.filter("");
+      setFilter("");
+      return filter;
+    } else {
+      props.filter(event.target.innerText);
+      setFilter(event.target.innerText);
+      return filter;
+    }
+  };
   console.log(search);
+  console.log(filter);
   return (
     <Navbar
       expand="lg"
@@ -37,11 +50,24 @@ const NavBar = (props) => {
             <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
             <NavDropdown title="Filter" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Fantasy</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Horror</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">History</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Scifi</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">Romance</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.0" onClick={handleFilter}>
+                Remove Filter
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1" onClick={handleFilter}>
+                Fantasy
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" onClick={handleFilter}>
+                Horror
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3" onClick={handleFilter}>
+                History
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4" onClick={handleFilter}>
+                Scifi
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.5" onClick={handleFilter}>
+                Romance
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="ml-auto">
