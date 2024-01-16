@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import Job from "./Job";
 import { useNavigate } from "react-router-dom";
-
 const MainSearch = () => {
+  let data = localStorage.getItem("joblist");
   const [query, setQuery] = useState("");
   const [jobs, setJobs] = useState([]);
   const navigate = useNavigate();
+
   const baseEndpoint =
     "https://strive-benchmark.herokuapp.com/api/jobs?search=";
 

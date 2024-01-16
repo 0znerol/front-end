@@ -6,8 +6,8 @@ import { createStore } from "redux";
 import storeReducer from "../reducers";
 import { useState } from "react";
 const Job = ({ data }) => {
-  const userlist = useSelector((state) => state);
-  const [faveJobs, setFaveJobs] = useState([]);
+  const joblist = useSelector((state) => state);
+  const [faveJobs, setFaveJobs] = useState([joblist]);
   const dispatch = useDispatch();
   return (
     <Row
@@ -26,10 +26,9 @@ const Job = ({ data }) => {
         <button
           key={data.id}
           onClick={() => {
-            setFaveJobs([...faveJobs, data]);
-
             dispatch(addFavoriutes(data));
-            console.log(userlist);
+            localStorage.setItem("joblist", JSON.stringify(faveJobs));
+            console.log(joblist);
           }}
         >
           add favorite
