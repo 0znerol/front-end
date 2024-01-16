@@ -19,7 +19,7 @@ const BookList = (props) => {
       {fValue === "Fantasy" && (
         <Row className="m-auto rounded">
           <Row className="justify-content-start">
-            <h3 className="border rounded border-dark py-2 bg-secondary-subtle shadow w-25 text-center ms-5">
+            <h3 className="border rounded border-dark py-2 bg-dark shadow w-25 text-center mt-3 ms-5">
               Fantasy
             </h3>
           </Row>
@@ -32,7 +32,7 @@ const BookList = (props) => {
       {fValue === "Scifi" && (
         <Row className="m-auto">
           <Row className="justify-content-start">
-            <h3 className="border rounded border-dark py-2 bg-secondary-subtle shadow w-25 text-center mt-3 ms-5">
+            <h3 className="border rounded border-dark py-2 bg-dark shadow w-25 text-center mt-3 ms-5">
               SciFi
             </h3>
           </Row>
@@ -44,7 +44,7 @@ const BookList = (props) => {
       {fValue === "History" && (
         <Row className="m-auto">
           <Row className="justify-content-start">
-            <h3 className="border rounded border-dark py-2 bg-secondary-subtle shadow w-25 text-center mt-3 ms-5">
+            <h3 className="border rounded border-dark py-2 bg-dark shadow w-25 text-center mt-3 ms-5">
               History
             </h3>
           </Row>
@@ -57,7 +57,7 @@ const BookList = (props) => {
       {fValue === "Horror" && (
         <Row className="m-auto">
           <Row className="justify-content-start">
-            <h3 className="border rounded border-dark py-2 bg-secondary-subtle shadow w-25 text-center mt-3 ms-5">
+            <h3 className="border rounded border-dark py-2 bg-dark shadow w-25 text-center mt-3 ms-5">
               Horror
             </h3>
           </Row>
@@ -70,7 +70,7 @@ const BookList = (props) => {
       {fValue === "Romance" && (
         <Row className="m-auto">
           <Row className="justify-content-start">
-            <h3 className="border rounded border-dark py-2 bg-secondary-subtle shadow w-25 text-center mt-3 ms-5">
+            <h3 className="border rounded border-dark py-2 bg-dark shadow w-25 text-center mt-3 ms-5">
               Romance
             </h3>
           </Row>
@@ -84,7 +84,7 @@ const BookList = (props) => {
       {fValue === "" && (
         <Row className="m-auto">
           <Row className="justify-content-start">
-            <h3 className="border rounded border-dark py-2 bg-secondary-subtle shadow w-25 text-center mt-3 ms-5">
+            <h3 className="border rounded border-dark py-2 bg-dark shadow w-25 text-center mt-3 ms-5">
               All Books
             </h3>
           </Row>

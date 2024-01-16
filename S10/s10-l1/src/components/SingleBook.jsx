@@ -38,9 +38,9 @@ const SingleBook = (props) => {
       return null;
     } else {
       return (
-        <Col key={asin} className="d-flex justify-content-center">
+        <Col key={asin} className="d-flex justify-content-center ">
           <Card
-            className="text-center  p-0 col-1 border border-dark shadow mt-2"
+            className="text-center  p-0 col-1 border bg-dark border-dark shadow mt-2 text-light"
             style={{ width: "16em", height: "33em" }}
           >
             <Card.Img

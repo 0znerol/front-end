@@ -38,34 +38,61 @@ const NavBar = (props) => {
   console.log(search);
   console.log(filter);
   return (
-    <Navbar
-      expand="lg"
-      className="bg-secondary-subtle border border-dark shadow"
-    >
+    <Navbar expand="lg" className="bg-dark border border-dark shadow">
       <Container fluid className="m-0">
-        <Navbar.Brand href="#home">React-Bookstrap</Navbar.Brand>
+        <Navbar.Brand href="#home" className="text-light">
+          React-Bookstrap
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="#" className="text-light">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="text-light">
+              About
+            </Nav.Link>
             <NavDropdown title="Filter" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.0" onClick={handleFilter}>
+              <NavDropdown.Item
+                className="text-light"
+                href="#action/3.0"
+                onClick={handleFilter}
+              >
                 Remove Filter
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1" onClick={handleFilter}>
+              <NavDropdown.Item
+                className="text-light"
+                href="#action/3.1"
+                onClick={handleFilter}
+              >
                 Fantasy
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" onClick={handleFilter}>
+              <NavDropdown.Item
+                className="text-light"
+                href="#action/3.2"
+                onClick={handleFilter}
+              >
                 Horror
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" onClick={handleFilter}>
+              <NavDropdown.Item
+                className="text-light"
+                href="#action/3.3"
+                onClick={handleFilter}
+              >
                 History
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4" onClick={handleFilter}>
+              <NavDropdown.Item
+                className="text-light"
+                href="#action/3.4"
+                onClick={handleFilter}
+              >
                 Scifi
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5" onClick={handleFilter}>
+              <NavDropdown.Item
+                className="text-light"
+                href="#action/3.5"
+                onClick={handleFilter}
+              >
                 Romance
               </NavDropdown.Item>
             </NavDropdown>

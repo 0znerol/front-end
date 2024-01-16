@@ -1,0 +1,22 @@
+.bg-body-dark {
+  background-color: #352d22;
+  color: white;
+}
+.dropdown-toggle {
+  color: white !important;
+}
+.dropdown-toggle:click {
+  color: white;
+}
+.dropdown-toggle:hover {
+  color: #4c8ae7 !important;
+}
+.dropdown-menu {
+  background-color: #352d22;
+}
+.show > .dropdown-toggle {
+  background-color: #0b5ed7;
+}
+.dropdown-item:hover {
+  background-color: #0b5ed7;
+}

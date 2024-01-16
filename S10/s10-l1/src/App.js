@@ -33,7 +33,7 @@ function App() {
   // }, [sInput]);
   console.log(search);
   return (
-    <div className="App bg-warning">
+    <div className="App bg-body-dark">
       <NavBar searchInput={sInput} filter={fValue} />
       <HeroComponent />
       <AllBooks searchValue={search} filterBooks={filter} />
