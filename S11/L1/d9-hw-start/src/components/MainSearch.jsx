@@ -27,6 +27,7 @@ const MainSearch = () => {
 
   const handleChange = (e) => {
     setQuery(e.target.value);
+    console.log(query);
 
     // if (query === "") {
     //   dispatch(clearJobs());
@@ -38,7 +39,6 @@ const MainSearch = () => {
     e.preventDefault();
     dispatch(getAllJobs(query));
   };
-  console.log(query);
 
   return (
     <Container>

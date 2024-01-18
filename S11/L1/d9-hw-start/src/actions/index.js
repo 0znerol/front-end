@@ -29,7 +29,7 @@ export const addFavorites = (job) => {
 export const getAllJobs = (query) => {
   // Con Redux Thunk ho la possibilità di effettuare chiamate
   // asincrone prima di inviare una azione
-  console.log(query);
+  // console.log(query);
   return function (dispatch, getState) {
     // function(dispatch, state)
     axios
@@ -39,7 +39,7 @@ export const getAllJobs = (query) => {
           "&limit=20"
       )
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         return dispatch({ type: "GET_ALL_JOBS", payload: response.data });
       });
   };
@@ -48,6 +48,7 @@ export const clearJobs = () => {
   // Con Redux Thunk ho la possibilità di effettuare chiamate
   // asincrone prima di inviare una azione
   return function (dispatch, getState) {
-    return dispatch({ type: "CLEAR_JOBS", payload: [] });
+    console.log(getState());
+    return dispatch({ type: "CLEAR_JOBS", payload: null });
   };
 };
