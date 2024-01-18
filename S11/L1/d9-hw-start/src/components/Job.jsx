@@ -7,7 +7,6 @@ import jobsReducer from "../reducers/rootreduce";
 import { useState } from "react";
 const Job = ({ data }) => {
   const joblist = useSelector((state) => state.favjobs);
-  console.log(joblist);
   const [faveJobs, setFaveJobs] = useState([joblist]);
   const dispatch = useDispatch();
   return (

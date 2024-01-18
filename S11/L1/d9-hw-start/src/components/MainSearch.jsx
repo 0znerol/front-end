@@ -3,18 +3,20 @@ import { Container, Row, Col, Form } from "react-bootstrap";
 import Job from "./Job";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllJobs } from "../actions";
+import { clearJobs, getAllJobs } from "../actions";
 const MainSearch = () => {
   let data = localStorage.getItem("joblist");
   const dispatch = useDispatch();
   const [query, setQuery] = useState("");
-  const [jobs, setJobs] = useState([]);
   const navigate = useNavigate();
-  const joblist = useSelector((state) => state.jobs);
+  const joblist = useSelector((state) => state.jobs[1]);
+  const [jobs, setJobs] = useState("");
+
+  // console.log(joblist);
   useEffect(() => {
     setJobs(joblist);
   });
-  console.log(jobs[0]);
+  console.log(jobs);
   // const joblist = useSelector((state) => state.jobs);
   // console.log(joblist);
   // if (joblist.jobs[0] !== undefined) {
@@ -25,12 +27,18 @@ const MainSearch = () => {
 
   const handleChange = (e) => {
     setQuery(e.target.value);
+
+    // if (query === "") {
+    //   dispatch(clearJobs());
+    // }
   };
 
   const handleSubmit = async (e) => {
+    // jobs[0] = dispatch(getAllJobs(query));
     e.preventDefault();
     dispatch(getAllJobs(query));
   };
+  console.log(query);
 
   return (
     <Container>
@@ -54,13 +62,13 @@ const MainSearch = () => {
             />
           </Form>
         </Col>
-        {jobs[0] != undefined && (
+        {jobs ? (
           <Col xs={10} className="mx-auto mb-5">
-            {jobs[0].data.map((jobData) => (
+            {jobs.data.map((jobData) => (
               <Job key={jobData._id} data={jobData} />
             ))}
           </Col>
-        )}
+        ) : null}
       </Row>
     </Container>
   );
