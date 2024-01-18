@@ -16,13 +16,6 @@ const MainSearch = () => {
   useEffect(() => {
     setJobs(joblist);
   });
-  // const joblist = useSelector((state) => state.jobs);
-  // console.log(joblist);
-  // if (joblist.jobs[0] !== undefined) {
-  //   JL = joblist.jobs[0].data;
-  // }
-  // const baseEndpoint =
-  //   "https://strive-benchmark.herokuapp.com/api/jobs?search=";
 
   const handleChange = (e) => {
     setQuery(e.target.value);

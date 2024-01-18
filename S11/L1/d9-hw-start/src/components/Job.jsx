@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addFavorites } from "../actions";
 import { createStore } from "redux";
 import { useState } from "react";
+import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 const Job = ({ data }) => {
   const joblist = useSelector((state) => state.favjobs);
   const [faveJobs, setFaveJobs] = useState([joblist]);
@@ -21,14 +22,16 @@ const Job = ({ data }) => {
           {data.title}
         </a>
       </Col>
-      <Col xs={4}>
+      <Col xs={4} className="text-end">
         <button
+          type="button"
+          className="btn border-none bg-transparent"
           key={data.id}
           onClick={() => {
             dispatch(addFavorites(data));
           }}
         >
-          add favorite
+          <i class="bi bi-bookmark-fill fs-3"></i>
         </button>
       </Col>
     </Row>

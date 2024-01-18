@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { deleteFav } from "../actions";
+import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 export default function Favorites() {
   const navigate = useNavigate();
   const jobs = useSelector((state) => state.favjobs);
@@ -59,12 +60,12 @@ export default function Favorites() {
                   <td className="border border-dark">
                     <button
                       type="button"
-                      className="border border-dark"
+                      className="btn border-none bg-transparent"
                       onClick={() => {
                         dispatch(deleteFav(job));
                       }}
                     >
-                      remove
+                      <i class="bi bi-bookmark-dash-fill fs-3"></i>
                     </button>
                   </td>
                 </tr>
