@@ -8,7 +8,7 @@ import { deleteFav } from "../actions";
 export default function Favorites() {
   const navigate = useNavigate();
   const jobs = useSelector((state) => state.favjobs);
-  console.log(jobs);
+  // console.log(jobs);
   const dispatch = useDispatch();
   return (
     <Row className="text-center">

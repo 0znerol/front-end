@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addFavorites } from "../actions";
 import { createStore } from "redux";
-import jobsReducer from "../reducers/rootreduce";
 import { useState } from "react";
 const Job = ({ data }) => {
   const joblist = useSelector((state) => state.favjobs);
@@ -27,7 +26,6 @@ const Job = ({ data }) => {
           key={data.id}
           onClick={() => {
             dispatch(addFavorites(data));
-            console.log(joblist);
           }}
         >
           add favorite

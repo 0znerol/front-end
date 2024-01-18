@@ -1,10 +1,8 @@
 import axios from "axios";
-import jobsReducer from "../reducers/allJobsreduce";
-import favJobsReducer from "../reducers/addFavReduce";
 export const deleteFav = (fav) => {
-  console.log(fav._id);
+  // console.log(fav._id);
   return (dispatch, state) => {
-    console.log(state);
+    // console.log(state);
     dispatch({ type: "REMOVE_FAV", payload: fav });
   };
 };
@@ -15,7 +13,7 @@ export const addFavorites = (job) => {
   return (dispatch, getState) => {
     // function(dispatch, state) {} => (dispatch, state) => {}
     // getState ritorna lo stato contenuto nell store
-    console.log(getState());
+    // console.log(getState());
     // findIndex cerca un oggetto in un array, se lo trova mi restituisce l'indice altrimenti -1
     // find cerca un oggetto in un array, se lo trova mi restituisce l'oggetto' altrimenti null
     // if (getState().jobs.findIndex((u) => u._id === job._id) < 0) {
@@ -44,11 +42,11 @@ export const getAllJobs = (query) => {
       });
   };
 };
-export const clearJobs = () => {
-  // Con Redux Thunk ho la possibilità di effettuare chiamate
-  // asincrone prima di inviare una azione
-  return function (dispatch, getState) {
-    console.log(getState());
-    return dispatch({ type: "CLEAR_JOBS", payload: null });
-  };
-};
+// export const clearJobs = () => {
+//   // Con Redux Thunk ho la possibilità di effettuare chiamate
+//   // asincrone prima di inviare una azione
+//   return function (dispatch, getState) {
+//     console.log(getState());
+//     return dispatch({ type: "CLEAR_JOBS", payload: null });
+//   };
+// };

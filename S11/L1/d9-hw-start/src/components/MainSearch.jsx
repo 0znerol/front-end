@@ -16,7 +16,6 @@ const MainSearch = () => {
   useEffect(() => {
     setJobs(joblist);
   });
-  console.log(jobs);
   // const joblist = useSelector((state) => state.jobs);
   // console.log(joblist);
   // if (joblist.jobs[0] !== undefined) {
@@ -27,7 +26,6 @@ const MainSearch = () => {
 
   const handleChange = (e) => {
     setQuery(e.target.value);
-    console.log(query);
 
     // if (query === "") {
     //   dispatch(clearJobs());
