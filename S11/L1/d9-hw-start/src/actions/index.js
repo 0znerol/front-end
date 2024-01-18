@@ -1,8 +1,12 @@
 import axios from "axios";
 import jobsReducer from "../reducers/allJobsreduce";
 import favJobsReducer from "../reducers/addFavReduce";
-export const deleteFav = (job) => {
-  return { type: "REMOVE_JOB", payload: job };
+export const deleteFav = (fav) => {
+  console.log(fav._id);
+  return (dispatch, getState) => {
+    console.log(getState());
+    dispatch({ type: "REMOVE_FAV", payload: fav });
+  };
 };
 
 export const addFavorites = (job) => {
