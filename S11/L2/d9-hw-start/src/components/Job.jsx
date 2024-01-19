@@ -1,8 +1,8 @@
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addFavorites } from "../actions";
-import { createStore } from "redux";
+import { addFavorites } from "../slice/slices";
+
 import { useState } from "react";
 import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 const Job = ({ data }) => {

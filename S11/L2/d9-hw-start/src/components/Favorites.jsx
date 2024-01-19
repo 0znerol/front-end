@@ -4,11 +4,11 @@ import { store } from "../store/store";
 import { useNavigate } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { deleteFav } from "../actions";
+import { deleteFav } from "../slice/slices";
 import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 export default function Favorites() {
   const navigate = useNavigate();
-  const jobs = useSelector((state) => state.favjobs);
+  const jobs = useSelector((state) => state.jobs.favjobs);
   // console.log(jobs);
   const dispatch = useDispatch();
   return (
