@@ -37,7 +37,7 @@ const Job = ({ data }) => {
             }
           }}
         >
-          <i class="bi bi-bookmark fs-3"></i>
+          <i className="bi bi-bookmark fs-3"></i>
         </button>
       </Col>
     </Row>
